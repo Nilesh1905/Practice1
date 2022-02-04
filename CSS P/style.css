@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding: 0;
+}
+
+.main{
+	margin-left:30px;
+	margin-bottom:150px;
+	}
+
+
+h2{
+	color: deeppink;
+	font-family: myfont;
+}
+
+h1{
+	text-shadow: 5px 5px 3px pink;
+	margin: 10px 10px;	
+}
+
+@font-face{
+	font-family: myfont;
+	src: url("go3v2.ttf");	
+}
+
+
+
+.word_wrap{
+	word-wrap: break-word;
+	width: 200px;
+	border: 1px solid red;	
+	color:pink;	
+	margin-left:20px;
+}
+
+.no_wrap{
+	width: 200px;
+	border: 1px solid red;	
+	margin-left:20px;
+}
+.border{
+	width: 150px;
+	height: 80px;
+	border: 1px solid red;	
+	margin-left: 20px;
+	overflow: scroll;
+}
+
+.dogbg{
+	width:100%;
+	height:100px;
+	background-color: yellow;
+	position:relative;
+}
+
+.dog img{
+	height:100px;
+	position:absolute;
+	left:0;
+	top:-30px;
+	animation-name:myanimation;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes myanimation{
+	from{left: 0}
+	to{left: 65%}	
+}
+.love{
+	height:30px;
+	width: 28px;
+	margin-left: 90px;
+	margin-top:-25px;
+	display:block;
+	transition-property: width, height;
+	transition-duration: 1s;
+	}
+
+.love:hover{
+	height:60px;
+	width: 56px;	
+	}
+
+.multicols{
+	column-count: 3;
+	column-gap: 50px;
+	text-align:justify;
+	column-rule: dotted;
+	column-rule-color: red;
+	column-rule-width: 5px;
+	}
+
+.bgimg{
+	background-image: url("n.jpg");
+	width:600px;
+	height:200px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+}
+.borderbg{
+	background-image: url("n.jpg");
+	width:300px;
+	height:100px;
+	background-repeat: no-repeat;
+/*	background-size: cover;*/
+	background-size: 100% 100%;	
+	border: 2px solid;	
+	border-radius: 50%;
+}
+
+.boxshadow{
+	background-image: url("n.jpg");
+	width:300px;
+	height:100px;
+	background-size: 100% 100%;	
+	border: 2px solid;	
+	border-radius: 10px;
+	box-shadow: 5px 20px 15px 10px grey;
+}
+
+.boxsize{
+	width: 300px;
+	height: 100px;
+	background: black;
+	padding-top: 30px;
+/*    padding-right: 50px;*/
+    padding-left: 100px;
+/*    margin-top: 5px;*/
+	box-sizing: border-box;
+}
+
+p{
+	color: white;
+}
+
+.transform{
+	width: 300px;
+	height: 100px;
+	background: black;
+	
+}
+
+.tp{
+	color: white;
+	transform: translatex(100px);
+	transform: translatey(60px);
+	}
+.rotate{
+	font-size:50px;
+	color: Blue;
+	text-shadow: 5px 10px 5px pink;
+	font-family: roboto;
+	transition: transform 2s; 
+	}
+.rotate:hover{
+	transform: rotate(90deg);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
